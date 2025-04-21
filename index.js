@@ -16,10 +16,7 @@ export const instance = new Razorpay({
 const app = express();
 
 app.use(express.json());
-app.use(cors({
-    origin: 'http://localhost:5173', // your frontend URL
-    credentials: true
-  }));
+app.use(cors());
 
 const port = process.env.PORT ;
 
